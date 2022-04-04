@@ -1,0 +1,42 @@
+.benfits{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(2rem + 1vw);
+    flex-direction: column;
+    #head{
+        font-size: var(--bh1);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #423AF2;
+        margin-bottom: calc(1rem + 1vw);
+    }
+}
+.b-imges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    .logo-b{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
+        img{
+            width: 12vw;
+            height: 10vw;
+        }
+        h2{
+            font-size:var(--f18);
+            color: #000000;
+            margin-top: calc(1rem + 1vw);
+        }
+     }
+    //  .logo-b:nth-child(2){
+    //     transform: translateY(-13%);
+    //  }
+}

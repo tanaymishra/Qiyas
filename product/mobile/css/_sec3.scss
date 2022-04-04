@@ -1,0 +1,40 @@
+section.highlights {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    .wrap {
+        background: url(../files/background.svg) no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+        margin-top: 2rem;
+        .brp {
+            display: flex;
+            margin-top: 1rem;
+            justify-content: flex-start;
+            flex-direction: column;
+            min-height: 220px;
+            justify-content: center;
+            .br {
+                font-family: "Poppins", sans-serif;
+                display: flex;
+                align-items: center;
+                margin: 1% 0rem;
+                max-width: 250px;
+
+                .dot {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #423af2;
+                    margin-right: 5px;
+                }
+                h6 {
+                    font-weight: 500;
+                    color: black;
+                }
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

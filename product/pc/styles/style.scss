@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+:root {
+    --bh1:calc(1rem + 2vw);
+    --placeholder: #807F7F;
+    --liner-login:linear-gradient(97.6deg, #423AF2 44.25%, rgba(168, 47, 249, 0.6) 157.95%);
+    --blue:#423AF2;
+    --blue-h:#2A20FF;
+    --pink:#A82FF9;
+    --f18:calc(.8rem + .8vw);
+    --card-shadow: 0px 4px 4px 0px #00000040;
+    --grey: #51515199;
+
+
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+}
+@import "/global/imports";
+@import "/global/nav";
+@import "secf1";
+@import "secf2";
+@import "secf3";

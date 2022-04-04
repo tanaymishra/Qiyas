@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --bh1:calc(1rem + 2vw);
+    --placeholder: #807F7F;
+    --liner-login:linear-gradient(97.6deg, #423AF2 44.25%, rgba(168, 47, 249, 0.6) 157.95%);
+    --blue:#423AF2;
+    --blue-h:#2A20FF;
+    --pink:#A82FF9;
+    --f18:calc(.8rem + .8vw);
+    --card-shadow: 0px 4px 4px 0px #00000040;
+    --grey: #51515199;
+    --h2r:1.5rem;
+    --bh2r:1.8rem;
+    --sh2r:1.2rem;
+}
+@media screen and (max-width: 1100px) {
+    // :root{--h2r:1.3vw;
+    // --bh2r:1.6vw;
+    // --sh2r:1.1vw;}
+    .main-section .container{
+        flex-direction: column !important;
+    }
+    .payment-container{
+        margin-top: 3rem;
+    }
+    }
+@import "/global/nav";
+@import "/global/imports";
+@import "cart";

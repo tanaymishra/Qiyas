@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+*::-moz-selection {
+  background: transparent;
+}
+
+*::selection {
+  background: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.register {
+  display: none;
+}
+
+.container {
+  position: relative;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.login-main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(4px) !important;
+          backdrop-filter: blur(4px) !important;
+  background-color: rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-main .close-container {
+  height: 80%;
+  max-height: 500px;
+  width: 3%;
+  min-width: 30px;
+}
+
+.login-main .close-container .close {
+  position: relative;
+  aspect-ratio: 1;
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-main .close-container .close .line {
+  width: 58%;
+  border-radius: 1rem;
+  height: 8%;
+  background: white;
+}
+
+.login-main .close-container .close .l1 {
+  -webkit-transform: rotate(134deg);
+          transform: rotate(134deg);
+}
+
+.login-main .close-container .close .l2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.login-main .login-container {
+  width: 52%;
+  max-width: 350px;
+  height: 80%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-height: 500px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f0f0f0;
+  border-radius: 1rem;
+}
+
+.login-main .login-container .socials {
+  height: 100%;
+  width: 25%;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(346.64deg, rgba(66, 58, 242, 0.9) 47.31%, rgba(167, 47, 249, 0.675) 147.36%, rgba(168, 47, 249, 0.666) 147.37%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.login-main .login-container .socials .media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+.login-main .login-container .socials .media-icons .icon {
+  width: 100%;
+  background: transparent;
+  border-radius: 60%;
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.2rem solid white;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.login-main .login-container .socials .media-icons .icon img {
+  width: 92%;
+  height: 90%;
+}
+
+.login-main .login-container .m-login {
+  width: 75%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.login-main .login-container .m-login .login.active {
+  -webkit-transform: scale(0.3) translateX(-400%);
+          transform: scale(0.3) translateX(-400%);
+}
+
+.login-main .login-container .m-login .register.active {
+  -webkit-transform: scale(1) translateX(0%);
+          transform: scale(1) translateX(0%);
+}
+
+.login-main .login-container .m-login .login {
+  position: relative;
+}
+
+.login-main .login-container .m-login .login,
+.login-main .login-container .m-login .register {
+  height: 100%;
+  -webkit-transition-duration: .5s !important;
+          transition-duration: .5s !important;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1.5fr 1.3fr;
+      grid-template-rows: 1fr 1.5fr 1.3fr;
+}
+
+.login-main .login-container .m-login .login h2,
+.login-main .login-container .m-login .register h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.login-main .login-container .m-login .login form,
+.login-main .login-container .m-login .register form {
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-main .login-container .m-login .login .inputs,
+.login-main .login-container .m-login .register .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-main .login-container .m-login .login .field,
+.login-main .login-container .m-login .register .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  margin: 0.5rem 0;
+  width: 80%;
+}
+
+.login-main .login-container .m-login .login .field h4,
+.login-main .login-container .m-login .register .field h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.login-main .login-container .m-login .login .field .input.wrong,
+.login-main .login-container .m-login .register .field .input.wrong {
+  border: 2px solid #f75a5a;
+}
+
+.login-main .login-container .m-login .login .field .input,
+.login-main .login-container .m-login .register .field .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #423af2;
+  border-radius: 0.5rem;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  aspect-ratio: 5;
+  width: 100%;
+}
+
+.login-main .login-container .m-login .login .field .input img,
+.login-main .login-container .m-login .register .field .input img {
+  position: relative;
+  width: 12%;
+  height: 70%;
+  margin: 0rem 1rem;
+}
+
+.login-main .login-container .m-login .login .field .input input,
+.login-main .login-container .m-login .register .field .input input {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 70%;
+  font-family: "Montserrat", "Poppins";
+}
+
+.login-main .login-container .m-login .login .otp,
+.login-main .login-container .m-login .register .otp {
+  display: none;
+}
+
+.login-main .login-container .m-login .register {
+  -ms-grid-rows: 1fr 1.5fr 1fr;
+      grid-template-rows: 1fr 1.5fr 1fr;
+  position: absolute;
+  -webkit-transform: translateX(100%) scale(0.4);
+          transform: translateX(100%) scale(0.4);
+}
+
+.login-main .login-container .m-login .register .aggreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.login-main .login-container .m-login .register .aggreement .checkbox.checked {
+  background: #423af2;
+  -webkit-animation: changeCheck  .5s forwards;
+          animation: changeCheck  .5s forwards;
+}
+
+.login-main .login-container .m-login .register .aggreement .checkbox.checked .line {
+  width: 49%;
+  height: 18%;
+  background: white;
+}
+
+.login-main .login-container .m-login .register .aggreement .checkbox.checked .line-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.login-main .login-container .m-login .register .aggreement .checkbox.checked .line-2 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.login-main .login-container .m-login .register .aggreement .checkbox {
+  cursor: pointer;
+  background: transparent;
+  border: 0.3rem solid #423af2;
+  width: 13%;
+  border-radius: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: initalCheck .5s forwards;
+          animation: initalCheck .5s forwards;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  aspect-ratio: 1;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-main .login-container .m-login .register .aggreement h2 {
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin-left: .8rem;
+}
+
+.login-main .login-container .m-login .register .aggreement h2 span {
+  color: #423af2;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-main .login-container .m-login h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.login-main .login-container .submit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-main .login-container .submit input {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  color: white;
+  position: absolute;
+}
+
+.login-main .login-container .submit img {
+  width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .login-main .login-container {
+    background: #f0f0f0;
+    width: 80%;
+    max-width: 300px;
+    max-height: 500px;
+    height: 80%;
+  }
+  .login-main .m-login .login h2 {
+    font-size: 5vw !important;
+  }
+  .login-main .m-login .login .inputs .field h4 {
+    font-size: 3vw !important;
+  }
+}
+
+@-webkit-keyframes changeCheck {
+  50% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes changeCheck {
+  50% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes initalCheck {
+  50% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes initalCheck {
+  50% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,256 @@
+//Sort type and background designing
+.content-search {
+    //Background
+    #background-search {
+        position: fixed;
+        width: 160vw;
+        height: 74vw;
+        background: linear-gradient(292.83deg, #423af2 16.19%, #bc5afe 90.84%);
+        border-radius: 100%;
+        /* bottom: 0; */
+        bottom: -170%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(355deg);
+        z-index: -1;
+    }
+    //
+    .main {
+        width: 80%;
+        max-width: 1300px;
+        margin: auto;
+    }
+    .search-info {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: calc(1rem + 0.8vw);
+        }
+        .sort-by {
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            #sort-h2 {
+                margin-right: 1rem;
+                h2 {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: calc(0.8rem + 0.5vw);
+                }
+            }
+            #types {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                font-family: "Roboto", sans-serif;
+                a {
+                    font-weight: 400;
+                    font-size: calc(0.9rem + 0.4vw);
+                    margin: 0 calc(0.1rem + 0.2vw);
+                }
+                .a-active {
+                    color: rgba(37, 30, 187, 1);
+                    position: relative;
+                }
+                .a-active::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 15%;
+                    background: rgba(37, 30, 187, 1);
+                    border-radius: 40%;
+                    bottom: -15%;
+                }
+            }
+        }
+    }
+}
+//Card Container and card
+.card-section {
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+    .box-des {
+        width: 20%;
+        height: 20%;
+        background: rgba(66, 58, 242, 1);
+        position: absolute;
+        border-radius: 1rem;
+        bottom: -6%;
+        left: -15%;
+    }
+    .inner-card-section {
+        width: 80%;
+        margin: auto;
+        max-width: 1300px;
+    }
+    .card-search {
+        width: 90%;
+        margin: auto;
+        box-shadow: 0px 9px 25px 11px rgba(0, 0, 0, 0.25);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 2rem;
+        min-height: calc(300px + 3vw);
+        height: 45vh;
+        max-height: 400px;
+        position: relative;
+        overflow: hidden;
+        //Inner div of card
+        .inner-card {
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            height: 100%;
+            margin: auto;
+            align-items: center;
+            .s-first {
+                display: flex;
+                height: 80%;
+                justify-content: center;
+                align-items: center;
+                .product {
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                        height: 100%;
+                    }
+                }
+                .details {
+                    height: 95%;
+                    margin-left: 2rem;
+                    .pr-name {
+                        display: flex;
+                        flex-direction: column;
+                        h3 {
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 500;
+                            color: rgba(106, 106, 106, 1);
+                            font-size: calc(10px + 0.7rem);
+                        }
+                        h2 {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 500;
+                            font-size: 2rem;
+                        }
+                    }
+                    .ratings {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        position: relative;
+                        .rating {
+                            width: 4rem;
+                            height: 2rem;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            background: rgba(66, 58, 242, 1);
+                            border-radius: 3px;
+                            h4 {
+                                font-family: "Poppins", sans-serif;
+                                font-weight: 500;
+                                font-size: 1rem;
+                                color: white;
+                            }
+                            img {
+                                height: 45%;
+                                object-fit: contain;
+                                position: relative;
+                                top: -5%;
+                            }
+                        }
+                        .reviews {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 500;
+                            font-size: 1.4rem
+                        }
+                    }
+                    .specs {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: start;
+                        font-family: "Poppins", sans-serif;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        .spec {
+                            display: flex;
+                            align-items: center;
+                            .circle {
+                                width: calc(0.8rem + 0.2vw);
+                                border-radius: 10rem;
+                                height: calc(0.8rem + 0.2vw);
+                                background: #423af2;
+                                margin-right: 0.5rem;
+                            }
+                            h2 {
+                                font-weight: 500;
+                            }
+                            margin: 0.3rem 0;
+                        }
+                    }
+                }
+            }
+            .s-second {
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                font-family: "Poppins", sans-serif;
+                top: -16%;
+                left: -6%;
+                h2 {
+                    font-size: calc(1.5rem + 0.4vw);
+                    font-weight: 500;
+                }
+                .discount {
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        color: rgba(37, 30, 187, 1);
+                        font-weight: 400;
+                        margin-left: 0.5rem;
+                    }
+                    .cut-price {
+                        position: relative;
+                        .cut-line {
+                            width: 100%;
+                            height: 0.2rem;
+                            position: absolute;
+                            top: 44%;
+                            background: rgba(67, 67, 67, 1);
+                        }
+                        h2 {
+                            font-size: calc(1rem + 0.4vw);
+                            color: rgba(67, 67, 67, 1);
+                        }
+                    }
+                }
+                .trusted-img {
+                    height: 10%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .pr-name{
+        h2{
+            font-size: calc(.8vw + .8rem) !important;
+        }
+    }
+    .reviews{
+        font-size: calc(0.5rem + 0.5vw) !important;
+    }
+    .specs{
+        font-size: calc(.5rem + 0.5vw) !important;
+    }
+}

@@ -1,0 +1,44 @@
+.slider{
+    margin-top: calc(1rem + .8vw);
+}
+.img-slider{
+    width: 100vw;
+    height: 45vw;
+    position: relative;
+    .slides{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        transition:  transform .3s linear;
+        img{
+            width: auto;
+        }
+        z-index: 1;
+    }
+    .observer{
+        position: absolute;
+        // min-width: 8%;
+        height: 6%;
+        z-index: 2;
+        border-radius: 2rem;
+        background: rgba(0, 0, 0, 0.3);
+        right: 45%;
+        bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .o-circle{
+            width:1.5vw;
+            transition: 0.2s all ease-in;
+            height:45%;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.4);
+            margin: 0 .5vw;
+        }
+        .s-active{
+            background: white;
+            width: 2vw;
+        }
+    }
+}

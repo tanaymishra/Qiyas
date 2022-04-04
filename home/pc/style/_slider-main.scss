@@ -1,0 +1,31 @@
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .slides{
+        width: 100vw;
+        display: flex;
+        transition: transform 0.6s ease-in-out;
+        img{
+            width: 100vw;
+            height: 28vw;
+            transition: .6s all ease-in-out;
+        }
+    }
+}
+.left-s-btn,.right-s-btn{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    width:calc(1.5rem + 2vw);
+    img{
+        width: 100%;
+    }
+}
+.left-s-btn{
+    left:5%
+}
+.right-s-btn{
+    right:5%
+}

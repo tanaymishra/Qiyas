@@ -1,0 +1,125 @@
+footer {
+    margin-top: 4vw;
+    background: linear-gradient(0.05deg, #1c1b35 95.22%, rgba(28, 27, 53, 0) 168.92%);
+    .main-container {
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(12rem + 10vw);
+        .inner-container {
+            width: 85%;
+            height: 100%;
+            .f-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80%;
+                #line-first {
+                    width: 1%;
+                    background: rgba(196, 196, 196, 1);
+                    height: 100%;
+                    border-radius: 1vw;
+                }
+                .heading {
+                    font-family: "Montserrat", "Poppins", sans-serif;
+                    font-size: calc(1rem + 0.8vw);
+                    margin-bottom: calc(0.8rem + 0.8vw);
+                    height: 25%;
+                    h1 {
+                        font-weight: 500;
+                    }
+                    #line {
+                        height: 10%;
+                        width: 70%;
+                        background: rgba(108, 0, 180, 1);
+                        border-radius: 10px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    font-family: "Poppins", "Nunito", "Montserrat", sans-serif;
+                    font-size: calc(0.8rem + 0.3vw);
+                    font-weight: 300;
+                    color: white;
+                }
+                .f-first {
+                    width: 55%;
+                    max-width:500px;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                    .links {
+                        display: grid;
+                        grid-template-rows: repeat(6,20%);
+                        height: 75%;
+                    }
+                    .company,
+                    .service {
+                        height: 79%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        flex-direction: column;
+                    }
+                }
+                .f-second {
+                    width: 40%;
+                    max-width:500px;
+                    display: flex;
+                    height: 79%;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+                    .heading{
+                        height: 25%;
+                    }
+                    .text {
+                        height: 75%;
+                        span{
+                        font-family: "Poppins", "Montserrat", sans-serif;
+                        font-weight: 300;
+                        height: 100%;
+                        font-size: calc(.7rem + 0.3vw);
+                    }
+                    }
+                }
+            }
+        }
+        #los {
+            width: 150%;
+            transform: translateX(-20%);
+            height: 1%;
+            background: rgba(255, 242, 242, 0.41);
+        }
+        .copyright {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 19%;
+            justify-content: space-between;
+            #cc {
+                h1 {
+                    font-family: "Poppins", "Montserrat", sans-serif;
+                    font-weight: 300;
+                    font-size: calc(0.6rem + 0.8vw);
+                }
+            }
+            .logos {
+                width: 12%;
+                #logo-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        object-fit: contain;
+                        margin:0 5%;
+                        width: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}

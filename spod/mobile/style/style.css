@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+* img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+*::-moz-selection {
+  background: transparent;
+}
+
+*::selection {
+  background: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --placeholder: #807F7F;
+  --liner-login:linear-gradient(97.6deg, #423AF2 44.25%, rgba(168, 47, 249, 0.6) 157.95%);
+  --blue:#423AF2;
+  --blue-h:#2A20FF;
+  --pink:#A82FF9;
+  --f18:calc(.8rem + .8vw);
+  --card-shadow: 0px 4px 4px 0px #00000040;
+  --grey: #51515199;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100vw;
+  margin-top: calc(2.5rem + 1vw);
+}
+nav .inner-nav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .inner-nav .logo {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav .inner-nav .logo span {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: calc(9rem + 3vw);
+}
+nav .inner-nav .logo span img {
+  width: 100%;
+  height: 100%;
+}
+nav .inner-nav .icons {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+nav .inner-nav .icons #user,
+nav .inner-nav .icons #cart {
+  width: calc(3rem + 1vw);
+  height: calc(3rem + 1vw);
+}
+nav .inner-nav .icons #user,
+nav .inner-nav .icons #cart,
+nav .inner-nav .icons #search {
+  margin: 0 4%;
+  position: relative;
+  cursor: pointer;
+}
+nav .inner-nav .icons #search {
+  width: calc(4rem + 1.5vw);
+  height: calc(4rem + 1.5vw);
+  transform: translateY(-5%);
+  position: relative;
+  right: 0%;
+}
+nav .inner-nav .icons img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .inner-nav .icons #cart #c-items {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 1px solid #a82ff9;
+  border-radius: 3vw;
+  top: 38%;
+  right: 1%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #423af2;
+}
+
+.section-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.content-search {
+  margin-top: 1rem;
+}
+.content-search .search-info {
+  display: flex;
+  flex-direction: column;
+}
+.content-search .search-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: calc(1rem + 0.8vw);
+}
+.content-search .search-info .sort-by {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.content-search .search-info .sort-by .line {
+  width: 2em;
+  margin: 0.2rem 0;
+  border-radius: 1rem;
+  height: 0.3em;
+  background: black;
+}
+.content-search .search-info .sort-by .l1 {
+  width: 1.3rem;
+}
+.content-search .search-info .sort-by .l2 {
+  width: 0.8rem;
+}
+.content-search .search-info .sort-by #rel {
+  margin-left: 1rem;
+}
+
+.search-content {
+  margin-top: 1rem !important;
+  width: 80%;
+  margin: auto;
+}
+.search-content .card {
+  min-height: calc(150px + 12vw);
+  height: 45vh;
+  max-height: 400px;
+  width: 100%;
+  height: 10vw;
+  box-shadow: 0px 9px 27px 0px #00000040;
+  border-radius: 1rem;
+  max-width: 800px;
+}
+.search-content .card .inner-card {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.search-content .card .inner-card .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-content .card .inner-card .content .image {
+  width: 25%;
+  height: 80%;
+}
+.search-content .card .inner-card .content .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.search-content .card .inner-card .content .details {
+  height: 75%;
+  margin-left: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.search-content .card .inner-card .content .details .title h3 {
+  color: #6a6a6a;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(0.8vw + 0.8rem);
+}
+.search-content .card .inner-card .content .details .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: calc(1rem + 1vw);
+}
+.search-content .card .inner-card .content .details .reviews {
+  display: flex;
+}
+.search-content .card .inner-card .content .details .reviews .rating {
+  width: 4rem;
+  max-height: 29px;
+  max-width: 40px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #423af2;
+  color: white;
+  border-radius: 0.2rem;
+  font-family: "poppins", san-serif;
+}
+.search-content .card .inner-card .content .details .reviews .rating span {
+  font-size: calc(0.8rem + 0.6vw);
+  line-height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.search-content .card .inner-card .content .details .reviews .rating img {
+  width: 33%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  top: -4%;
+}
+.search-content .card .inner-card .content .details .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.8rem + 0.6vw);
+}
+.search-content .card .inner-card .content .details .price-trust {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 0.4rem 0vw;
+  font-family: "Poppins", sans-serif;
+}
+.search-content .card .inner-card .content .details .price-trust .price {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  max-width: 150px;
+  min-width: 85px;
+}
+.search-content .card .inner-card .content .details .price-trust .price h2 {
+  font-weight: 500;
+  color: black;
+  font-size: calc(15px + 1vw);
+}
+.search-content .card .inner-card .content .details .price-trust .price .prev-price .cut-price {
+  height: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.8rem + 1vw);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.search-content .card .inner-card .content .details .price-trust .price .prev-price .cut-price span {
+  position: relative;
+}
+.search-content .card .inner-card .content .details .price-trust .price .prev-price .cut-price .cut {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  background: #434343;
+  height: calc(1px + 0.2rem);
+}
+.search-content .card .inner-card .content .details .price-trust .price .prev-price h2 {
+  height: 15%;
+  color: black;
+  line-height: 120%;
+  color: #251ebb;
+  font-size: calc(0.8rem + 1vw);
+}
+.search-content .card .inner-card .content .details .price-trust .trust {
+  width: 30%;
+  max-width: 100px;
+}
+.search-content .card .inner-card .content .details .offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.search-content .card .inner-card .content .details .offers .plate {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.2vw;
+}
+.search-content .card .inner-card .content .details .offers .plate .p-image {
+  width: 7%;
+  max-width: 25px;
+}
+.search-content .card .inner-card .content .details .offers .plate .p-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.search-content .card .inner-card .content .details .offers .plate h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: calc(0.8rem + 1vw);
+  font-weight: 600;
+  margin-left: 0.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  body .price h2 {
+    font-size: 2.4rem !important;
+  }
+  body .prev-price .cut-price {
+    font-size: 1.4rem !important;
+  }
+  body .prev-price h2 {
+    font-size: 1.6rem !important;
+  }
+  body .plate {
+    margin-top: 0.8rem !important;
+  }
+  body .plate .h2-off {
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .offers .plate h2 {
+    font-size: 2.2vw !important;
+  }
+}/*# sourceMappingURL=style.css.map */
