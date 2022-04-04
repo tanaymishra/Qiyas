@@ -11,11 +11,11 @@ Use this command to clone this template into your PC..
 git clone https://github.com/tanaymishra/Qiyas
 ```
 ## Pages :
-*  [Home]("tanaymishra.github.io/Qiyas")
-*  [Cart]("tanaymishra.github.io/Qiyas/checkout")
-*  [Search]("tanaymishra.github.io/Qiyas/spod")
-*  [Product]("tanaymishra.github.io/Qiyas/product")
-*  [Product]("tanaymishra.github.io/Qiyas/login")
+*  [Home]("https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/")
+*  [Cart]("https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/checkout")
+*  [Search]("https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/spod")
+*  [Product]("https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/product")
+*  [Product]("https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/login")
 ## Contributing
 
 Contributions are always welcome!
