@@ -12,14 +12,14 @@ git clone https://github.com/tanaymishra/Qiyas
 ```
 Visit Website
 ```bash
-https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app/
+https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/
 ```
 ## Pages :
-*  [Home](https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app/)
-*  [Cart](https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app/checkout)
-*  [Search](https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app//spod)
-*  [Product](https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app//product)
-*  [Login](https://624aecdecfebce0008b0903a--genuine-heliotrope-613507.netlify.app//login)
+*  [Home](https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/)
+*  [Cart](https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/checkout)
+*  [Search](https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/spod)
+*  [Product](https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/product)
+*  [Login](https://624ae6d0f56ddd005f12b35a--genuine-heliotrope-613507.netlify.app/login)
 ## Contributing
 
 Contributions are always welcome!
@@ -38,3 +38,4 @@ If you have any feedback or query, please reach out to us at tanaymishra2204@gma
 ## Tech Stack
 
 **Client:** Scss, Javascript, Html5
+
