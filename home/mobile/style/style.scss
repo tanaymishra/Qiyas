@@ -13,7 +13,8 @@
     background: transparent;
 }
 html{
-    font-size: 62.5%
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 :root{
     --placeholder: #807F7F;
@@ -28,8 +29,8 @@ html{
 body{
     overflow-x: hidden;
 }
-@import "/global/navm";
-@import "/global/imports";
+@import "../../../global/navm";
+@import "../../../global/imports";
 @import "slider";
 @import "benefits";
 @import "cards";
